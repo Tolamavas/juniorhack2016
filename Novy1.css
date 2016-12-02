@@ -1,0 +1,24 @@
+
+
+ * { box-sizing: border-box;
+  }
+                                  
+ 
+
+body {
+
+               margin: auto;
+                background-color: #2ECCFA;
+              
+ }
+ 
+  .nadpis {
+     color: white;
+    text-align: center;
+    font-size: 52px;
+     text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;  
+  }
