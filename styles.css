@@ -3,10 +3,10 @@
 @import url("md.css") (min-width: 992px);
 @import url("lg.css") (min-width: 1200px); 
 
-body{background-image: url(../back.jpg);;
+body{background-image: url(../back1.jpg);;
      color: white;
      margin-top: 25px}
-#stranka{background: white;
+#stranka{background-image: url(../back12.jpg);;
          height: 700px;
          color: black;
          padding: 5px;
@@ -23,6 +23,7 @@ body{background-image: url(../back.jpg);;
       height: 175px;
       width: 400px;
       margin-top: 25px;
+      background: #ff8400;
       border:  2px black;}      
 input{height: 50px;
       font-size: x-large;
@@ -40,7 +41,7 @@ input{height: 50px;
     -1px -1px 0 #000,
     1px -1px 0 #000,
     -1px 1px 0 #000,
-    1px 1px 0 #000; }
+    1px 1px 0 #000;}
 .text{border:  1px;
       background: #ff8400;
       text-align: right;
