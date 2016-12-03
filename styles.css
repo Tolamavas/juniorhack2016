@@ -3,10 +3,10 @@
 @import url("md.css") (min-width: 992px);
 @import url("lg.css") (min-width: 1200px); 
 
-body{background-image: url(../back1.jpg);;
+body{background-image: url(images/back1.jpg);
      color: white;
      margin-top: 25px}
-#stranka{background-image: url(../back12.jpg);;
+#stranka{background-image: url(images/back12.jpg);
          height: 700px;
          color: black;
          padding: 5px;

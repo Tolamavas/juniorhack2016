@@ -1,5 +1,6 @@
 <?php
   $t = file_get_contents("data/temperature.txt");
+    if($_POST) {file_put_contents("data/temperature.txt", $_POST["change"]); header("location: index.php");}
 ?><!DOCTYPE html>
 <html lang='cs'>
   <head>
@@ -16,10 +17,10 @@
         </div>               
         <form action="" method="POST">
           <div class="pole">
-            <input type="number" name="show" value="<?php echo $t; ?>" disabled>
-          </form>
-          <form action="" method="GET"> 
-            <input type="number" name="change" required min="23" max="40" value="24">
+            <input type="number" name="show" value="<?php echo rand($t-2,$t+1); ?>" disabled>
+         
+         
+            <input type="number" name="change" required min="23" max="40" value="<?php echo $t; ?>">
             <input id="hover" type="submit" name="submit">
             
             
