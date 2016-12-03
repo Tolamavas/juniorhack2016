@@ -1,0 +1,45 @@
+
+
+void setup()
+{
+  Serial.begin(9600);
+  pinMode(A1,OUTPUT);
+}
+ 
+void loop()     
+{
+ int reading = (5.0 * analogRead(3) * 100) / 1024;  
+ 
+ Serial.print(reading); Serial.println(" stupne Celsia");
+ Serial.print(analogRead(2)); Serial.println(" lumenu");
+ 
+ delay(1000);
+
+ if (reading > 40)
+ {
+  digitalWrite(13, HIGH);
+  tone(A1,277);
+  delay(100);
+  
+  }
+ else
+ {
+  noTone(A1);
+  digitalWrite(13, LOW);
+  }
+
+ if (analogRead(2) > 700)
+ {
+  digitalWrite(12, LOW);
+  Serial.println("Stmiva se ");
+ }
+  else if (analogRead(2) > 900)
+ {
+   Serial.println("Tma");
+  }
+ else
+ {
+  digitalWrite(12, HIGH);
+ }
+
+}
